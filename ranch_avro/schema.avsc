@@ -1,0 +1,154 @@
+{
+    "type": "record",
+    "name": "Transaction",
+    "fields": [
+        {
+            "name": "address",
+            "type": "bytes"
+        },
+        {
+            "name": "type",
+            "type": "int"
+        },
+        {
+            "name": "timestamp",
+            "type": "long"
+        },
+        {
+            "name": "data",
+            "type": {
+                "type": "record",
+                "name": "Data",
+                "fields": [
+                    {
+                        "name": "ledgers",
+                        "type": {
+                            "type": "record",
+                            "name": "Ledgers",
+                            "fields": [
+                                {
+                                    "name": "uco",
+                                    "type": {
+                                        "type": "record",
+                                        "name": "UCOLedger",
+                                        "fields": [
+                                            {
+                                                "name": "amount",
+                                                "type": "double"
+                                            },
+                                            {
+                                                "name": "to",
+                                                "type": "bytes"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "previous_public_key",
+            "type": "bytes"
+        },
+        {
+            "name": "previous_signature",
+            "type": "bytes"
+        },
+        {
+            "name": "origin_signature",
+            "type": "bytes"
+        },
+        {
+            "name": "validation_stamp",
+            "type": {
+                "type": "record",
+                "name": "ValidationStamp",
+                "fields": [
+                    {
+                        "name": "proof_of_work",
+                        "type": "bytes"
+                    },
+                    {
+                        "name": "proof_of_integrity",
+                        "type": "bytes"
+                    },
+                    {
+                        "name": "ledger_operations",
+                        "type": {
+                            "type": "record",
+                            "name": "LedgerOperations",
+                            "fields": [
+                                {
+                                    "name": "node_movements",
+                                    "type": 
+                                    {
+                                        "type": "array",
+                                        "items": 
+                                        {
+                                            "type": "record",
+                                            "name": "NodeMovement",
+                                            "fields": [
+                                                {
+                                                    "name": "node_public_key",
+                                                    "type": "bytes"
+                                                },
+                                                {
+                                                    "name": "fee",
+                                                    "type": "double"
+                                                },
+                                                {
+                                                    "name": "is_coordinator",
+                                                    "type": "boolean",
+                                                    "default": false
+                                                },
+                                                {
+                                                    "name": "is_welcome",
+                                                    "type": "boolean",
+                                                    "default": false
+                                                },
+                                                {
+                                                    "name": "is_data_giver",
+                                                    "type": "boolean",
+                                                    "default": false
+                                                },
+                                                {
+                                                    "name": "is_cross_validation",
+                                                    "type": "boolean",
+                                                    "default": false
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "cross_validation_stamps",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "name": "CrossValidationStamp",
+                    "fields": [
+                        {
+                            "name": "signature",
+                            "type": "bytes"
+                        },
+                        {
+                            "name": "public_key",
+                            "type": "bytes"
+                        }
+                    ]
+                }
+            }
+        }
+    ] 
+}
+

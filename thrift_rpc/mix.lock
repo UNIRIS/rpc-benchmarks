@@ -1,0 +1,5 @@
+%{
+  "connection": {:hex, :connection, "1.0.4", "a1cae72211f0eef17705aaededacac3eb30e6625b04a6117c1b2db6ace7d5976", [:mix], [], "hexpm"},
+  "ranch": {:hex, :ranch, "1.7.1", "6b1fab51b49196860b733a49c07604465a47bdb78aa10c1c16a3d199f7f8c881", [:rebar3], [], "hexpm"},
+  "thrift": {:git, "https://github.com/pinterest/elixir-thrift.git", "4e6cc130738b4f04fdbb06bd6f12985b9a9438d3", []},
+}

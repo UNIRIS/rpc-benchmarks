@@ -1,0 +1,52 @@
+namespace main;
+
+table Transaction {
+  address: string;
+  type: short;
+  timestamp: ulong;
+  data: Data;
+  previous_key: string;
+  previous_sig: string;
+  origin_sig:  string;
+  validation_stamp: ValidationStamp;
+  cross_validation_stamps: [CrossValidationStamp];
+}
+
+table Data {
+  ledgers: Ledgers;
+}
+
+table Ledgers {
+  uco: UCOLedger;
+}
+
+table UCOLedger {
+  amount: float;
+  to: string;
+}
+
+table ValidationStamp {
+  proof_of_work: string;
+  proof_of_integrity: string;
+  ledger_operations: LedgerOperations;
+}
+
+table LedgerOperations {
+  node_movements: [NodeMovements];
+}
+
+table NodeMovements {
+  node_public_key: string;
+  fee: double;
+  is_welcome: bool;
+  is_coordinator: bool;
+  is_data_giver: bool;
+  is_cross_validaiton: bool;
+}
+
+table CrossValidationStamp {
+  public_key: string;
+  signature: string;
+}
+
+root_type Transaction;

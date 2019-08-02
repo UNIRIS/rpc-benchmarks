@@ -1,0 +1,15 @@
+%{
+  "bear": {:hex, :bear, "0.8.3", "866002127a97932720a0d475d8582c98ec5fb78db3a18dfe7eaf91594d9024b8", [:rebar3], [], "hexpm"},
+  "edown": {:hex, :edown, "0.7.0", "6803599606b10f8e328d6d60c44cd16244cd2429908894c415fce4211c3bfefd", [:make, :rebar], [], "hexpm"},
+  "eflatbuffers": {:hex, :eflatbuffers, "0.1.0", "8bd969160ee49af4aa06ee0501b20816c98ab5cf88413fa78154a5a209235180", [:mix], [], "hexpm"},
+  "elixometer": {:hex, :elixometer, "1.2.1", "41527a3fb2a4656ac3f721b523deaf4f55c5c901ffdb5e375260c6338dd2c164", [:mix], [{:edown, "~>0.7.0", [hex: :edown, repo: "hexpm", optional: false]}, {:exometer_core, "~>1.4.0", [hex: :exometer_core, repo: "hexpm", optional: false]}, {:lager, "~>3.0.2", [hex: :lager, repo: "hexpm", optional: false]}, {:pobox, "~>1.0.2", [hex: :pobox, repo: "hexpm", optional: false]}], "hexpm"},
+  "exometer_core": {:hex, :exometer_core, "1.4.0", "a546ccd38be910de6ea75ea95b724b6b2db513c26f02e30919b25eb19651815a", [:rebar3], [{:edown, "0.7.0", [hex: :edown, repo: "hexpm", optional: false]}, {:folsom, "0.8.3", [hex: :folsom, repo: "hexpm", optional: false]}, {:lager, "3.0.2", [hex: :lager, repo: "hexpm", optional: false]}, {:parse_trans, "2.9.0", [hex: :parse_trans, repo: "hexpm", optional: false]}, {:setup, "1.7.0", [hex: :setup, repo: "hexpm", optional: false]}], "hexpm"},
+  "folsom": {:hex, :folsom, "0.8.3", "71cff146152fa95e6092e62119f9dc96888660111e7b61853c8fdcf80598a4e0", [:rebar3], [{:bear, "0.8.3", [hex: :bear, repo: "hexpm", optional: false]}], "hexpm"},
+  "goldrush": {:hex, :goldrush, "0.1.7", "349a351d17c71c2fdaa18a6c2697562abe136fec945f147b381f0cf313160228", [:rebar3], [], "hexpm"},
+  "lager": {:hex, :lager, "3.0.2", "25dc81bc3659b62f5ab9bd073e97ddd894fc4c242019fccef96f3889d7366c97", [:rebar3], [{:goldrush, "0.1.7", [hex: :goldrush, repo: "hexpm", optional: false]}], "hexpm"},
+  "logger_file_backend": {:hex, :logger_file_backend, "0.0.10", "876f9f84ae110781207c54321ffbb62bebe02946fe3c13f0d7c5f5d8ad4fa910", [:mix], [], "hexpm"},
+  "parse_trans": {:hex, :parse_trans, "2.9.0", "3f5f7b402928fb9fd200c891e635de909045d1efac40ce3f924d3892898f85eb", [:rebar], [{:edown, "> 0.0.0", [hex: :edown, repo: "hexpm", optional: false]}], "hexpm"},
+  "pobox": {:hex, :pobox, "1.0.4", "e695bc3b2b547dd6c8e5a19cb743396e6670e306ad3ff498844738f9418bd686", [:rebar3], [], "hexpm"},
+  "ranch": {:hex, :ranch, "1.7.1", "6b1fab51b49196860b733a49c07604465a47bdb78aa10c1c16a3d199f7f8c881", [:rebar3], [], "hexpm"},
+  "setup": {:hex, :setup, "1.7.0", "15df8e57c6df9755e22bfb1aef0c640bd97e9889396fdfb2a85a5536a9043674", [:rebar3], [], "hexpm"},
+}

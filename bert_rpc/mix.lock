@@ -1,0 +1,4 @@
+%{
+  "bert_gate": {:git, "https://github.com/mprymek/bertgate.git", "3ac56b7c787c9590604faf3bcee98522181d3477", []},
+  "ranch": {:hex, :ranch, "1.7.1", "6b1fab51b49196860b733a49c07604465a47bdb78aa10c1c16a3d199f7f8c881", [:rebar3], [], "hexpm"},
+}

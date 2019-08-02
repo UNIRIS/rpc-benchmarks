@@ -1,0 +1,4 @@
+%{
+  "eflatbuffers": {:hex, :eflatbuffers, "0.1.0", "8bd969160ee49af4aa06ee0501b20816c98ab5cf88413fa78154a5a209235180", [:mix], [], "hexpm"},
+  "ranch": {:hex, :ranch, "1.7.1", "6b1fab51b49196860b733a49c07604465a47bdb78aa10c1c16a3d199f7f8c881", [:rebar3], [], "hexpm"},
+}
